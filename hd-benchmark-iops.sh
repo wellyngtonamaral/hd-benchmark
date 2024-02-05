@@ -4,8 +4,15 @@
 # ATTENTION: This script can cause irreparable damage to the file system if you select devices in use. #
 ########################################################################################################
 
+###############
+# DESCRIPTION #
+###############
+# I created this script to perform the IOPS benchmark of my spinning disks.
+# It runs directly against the physical device and tests the performance of the disk directly abstracting the OS and file system aspects.
+# You can use the hd-benchmark-throughput.sh to test the file system and/or a disk array.
+
 ###########
-# Credits #
+# CREDITS #
 ###########
 
 #This script is a collection of other projects such as:
