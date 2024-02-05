@@ -1,8 +1,8 @@
 # hd-bechmark
 
-This repository is a collection of simple command line scripts to perform benchmarks of spinning disks.
+This repository contains a collection of simple Linux command line scripts to perform benchmarks of spinning disks.
 
-There are two scripts:
+The available scripts are:
 
 hd-benchmark-iops.sh - it runs tests directly on the physical device and tests disk performance, abstracting the operating system and file system aspects.
 
