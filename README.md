@@ -6,7 +6,7 @@ The available scripts are:
 
 **hd-benchmark-iops.sh** - it runs tests directly on the physical device and tests disk performance, abstracting the operating system and file system aspects.
 
-Using this is possible to find out the speed of the disk and also the performance of the disk interface/disk controller (i.e: PCIe SATA Controllers or Port Multiplier).
+Using this is possible to find out the speed of the disk and also the performance of the disk interface/disk controller (i.e: PCIe SATA Controller or Port Multiplier).
 
 In the end, you can summarize all results in a single CSV file and compare multiple disks.
 
