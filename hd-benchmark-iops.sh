@@ -11,6 +11,20 @@
 # It runs directly against the physical device and tests the performance of the disk directly abstracting the OS and file system aspects.
 # You can use the hd-benchmark-throughput.sh to test the file system and/or a disk array.
 
+#########
+# TO-DO #
+#########
+# Create inline parameters.
+# Create an estimated runtime message. To define the estimated (it is exactly actually) time you should multiply # of devices * # of tests * # of block-size * runtime you define for each test.
+#	So:
+#		DEVICE=( /dev/sda /dev/sdb /dev/sdd /dev/sde /dev/sdf ) -> 5
+#		TEST=( randread randwrite randrw read write readwrite ) -> 6
+#		SIZE=( 4k 16k 256k 1m) -> 4
+#		RT=300 -> 300
+#	Then: 5*6*4*300 = 360000s or /60 = 600MI or /60/60 = 10H
+# Define automatically the devices available
+# Check if the device is mounted or not to avoid accidentally data lost 
+
 ###########
 # CREDITS #
 ###########
@@ -20,9 +34,9 @@
 # https://github.com/amarao/fio_minimal_csv_header
 # https://linuxconfig.org/bash-script-yes-no-prompt-example
 
-##############
-# Parameters #
-##############
+#############
+# VARIABLES #
+#############
 
 # Which test do you want to perform
 TEST=( randread randwrite randrw read write readwrite )
