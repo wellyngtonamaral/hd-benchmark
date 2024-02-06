@@ -1,6 +1,6 @@
-# hd-bechmark
+# hd-benchmark
 
-This repository contains a collection of simple Linux command line scripts to perform benchmarks of spinning disks.
+This repository contains a collection of simple Linux command lines to perform benchmarks of spinning disks.
 
 The available scripts are:
 
