@@ -54,7 +54,7 @@ HEADER="device;operation;block_size;terse_version;fio_version;jobname;groupid;er
 
 # Define which devices will be tested
 # Do not run FIO tests with a write workload (readwrite, randrw, write, trimwrite) directly against a device that is in use.
-DEVICE=( /dev/sda /dev/sdb /dev/sdd /dev/sde /dev/sdf )
+DEVICE=( /dev/sdb /dev/sdc /dev/sdd /dev/sde /dev/sdf )
 
 # Check if you are aware of the risks
 echo "This script can cause irreparable damage to the file system if you select devices in use."
