@@ -4,29 +4,6 @@
 # CAUTION: This script can cause irreparable damage to the file system if you select DEVs in use. #
 ########################################################################################################
 
-###############
-# DESCRIPTION #
-###############
-# I created this script to perform the IOPS benchmark of my spinning disks.
-# It runs directly against the physical DEV and tests the performance of the disk directly abstracting the OS and file system aspects.
-# Using this it is possible to find out the speed of the disk and also the performance of the disk/disk controller interface.
-# In the end it is possible to summarize all results in a single CSV file and compare multiple disks.
-# You can use the hd-benchmark-throughput.sh to test the file system and/or a disk array.
-
-#########
-# TO-DO #
-#########
-# Create inline parameters.
-# Create an estimated runtime message. To define the estimated (it is exactly actually) time you should multiply # of DEVs * # of tests * # of block-BS * runtime you define for each test.
-#	So:
-#		DEV=( /dev/sda /dev/sdb /dev/sdd /dev/sde /dev/sdf ) -> 5
-#		OP=( randread randwrite randrw read write readwrite ) -> 6
-#		BS=( 4k 16k 256k 1m) -> 4
-#		RT=300 -> 300
-#	Then: 5*6*4*300 = 360000s or /60 = 600MI or /60/60 = 10H
-# Define automatically the DEVs available
-# Check if the DEV is mounted or not to avoid accidentally data lost 
-
 #############
 # VARIABLES #
 #############
