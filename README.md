@@ -20,8 +20,8 @@ In the end, you can summarize all results in a single CSV file and compare multi
 To run the test is needed to have the FIO installed.
 
 ```shell
-sudo apt-get update
-sudo apt-get install fio
+# sudo apt-get update
+# sudo apt-get install fio
 ```
 
 
