@@ -18,7 +18,7 @@
 #############
 
 # Define which mount point will be OPed
-MOUNTPOINT=( /dev/sdb /dev/sdc /dev/sdd /dev/sde /dev/sdf )
+MNT=( /dev/sdb /dev/sdc /dev/sdd /dev/sde /dev/sdf )
 
 # Defines which block sizes will be OPed
 BS=( 4k 16k 256k 1m)
@@ -48,7 +48,7 @@ case $yn in
 
 		rm -fr /root/out/*
 		
-		for D in "${MOUNTPOINT[@]}"
+		for D in "${MNT[@]}"
 		do
 			for T in "${OP[@]}"
 			do
