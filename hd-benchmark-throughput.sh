@@ -8,22 +8,22 @@
 # DESCRIPTION #
 ###############
 # I created this script to perform the IOPS benchmark of my spinning disks.
-# It runs directly against the physical device and OPs the performance of the disk directly abstracting the OS and file system aspects.
+# It runs directly against the physical device and tests the performance of the disk directly abstracting the OS and file system aspects.
 # Using this it is possible to find out the speed of the disk and also the performance of the disk/disk controller interface.
 # In the end it is possible to summarize all results in a single CSV file and compare multiple disks.
-# You can use the hd-benchmark-throughput.sh to OP the file system and/or a disk array.
+# You can use the hd-benchmark-throughput.sh to test the file system and/or a disk array.
 
 #############
 # VARIABLES #
 #############
 
-# Define which mount point will be OPed
+# Define which mount point will be tested
 MNT=( /dev/sdb /dev/sdc /dev/sdd /dev/sde /dev/sdf )
 
-# Defines which block sizes will be OPed
+# Defines which block sizes will be tested
 BS=( 4k 16k 256k 1m)
 
-# Defines which file size will be OPed
+# Defines which file size will be tested
 GB=100GB
 
 # Defines which operations will be tested
