@@ -14,3 +14,11 @@ In the end, you can summarize all results in a single CSV file and compare multi
 
 > [!CAUTION]
 > These scripts can cause irreparable damage to the file system if you select devices in use.s
+
+## Credits
+
+https://docs.oracle.com/en-us/iaas/Content/Block/References/samplefiocommandslinux.htm
+
+https://github.com/amarao/fio_minimal_csv_header
+
+https://linuxconfig.org/bash-script-yes-no-prompt-example
