@@ -33,12 +33,22 @@ to **hd-benchmark-throughput.sh**:
 
 | Variable | Description | Value(s) |
 | --- | --- | --- |
-| DEVICE | Defines which devices will be tested                                                    |  /dev/sdb /dev/sdc /dev/sdd /dev/sde /dev/sdf   |
+| DEV    | Defines which devices will be tested                                                    |  /dev/sdb /dev/sdc /dev/sdd /dev/sde /dev/sdf   |
 | BS     | Defines which block sizes will be tested                                                | 4k 16k 256k 1m                                  |
 | OP     | Defines which operations will be tested                                                 | randread randwrite randrw read write readwrite  |
 | RT     | Defines how long (in seconds) each test will take                                       | 300                                             |
 | HEADER | Defines the headers to the CSV output file, it follows the FIO --minimal specification  | Do not change!                                  |
 
+to **hd-benchmark-throughput.sh**:
+
+| Variable | Description | Value(s) |
+| --- | --- | --- |
+| MNT    | Defines which devices will be tested                                                    |  /mnt/mount-point   |
+| BS     | Defines which block sizes will be tested                                                | 4k 16k 256k 1m                                  |
+| GB     | Defines which file size will be tested                                                  | 100GB                                  |
+| OP     | Defines which operations will be tested                                                 | randread randwrite randrw read write readwrite  |
+| RT     | Defines how long (in seconds) each test will take                                       | 300                                             |
+| HEADER | Defines the headers to the CSV output file, it follows the FIO --minimal specification  | Do not change!                                  |
 
 ## Credits
 
