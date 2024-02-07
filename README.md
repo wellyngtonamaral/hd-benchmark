@@ -15,6 +15,20 @@ In the end, you can summarize all results in a single CSV file and compare multi
 > [!CAUTION]
 > These scripts can cause irreparable damage to the file system if you select devices in use.s
 
+## Setup
+
+Before running the test it is necessary to define the variables:
+
+to **hd-benchmark-iops.sh**:
+
+| Variable | Description | Value(s) |
+| --- | --- | --- |
+| DEVICE | Defines which devices will be tested                                                    |  /dev/sdb /dev/sdc /dev/sdd /dev/sde /dev/sdf   |
+| SIZE   | Defines which block sizes will be tested                                                | 4k 16k 256k 1m                                  |
+| TEST   | Defines which operations will be tested                                                 | randread randwrite randrw read write readwrite  |
+| RT     | Defines how long (in seconds) each test will take                                       | 300                                             |
+| HEADER | Defines the headers to the CSV output file, it follows the FIO --minimal specification  | Do not change!                                  |
+
 ## Credits
 
 https://docs.oracle.com/en-us/iaas/Content/Block/References/samplefiocommandslinux.htm
