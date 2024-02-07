@@ -15,6 +15,16 @@ In the end, you can summarize all results in a single CSV file and compare multi
 > [!CAUTION]
 > These scripts can cause irreparable damage to the file system if you select devices in use.s
 
+## Pre-requisites
+
+To run the test is needed to have the FIO installed.
+
+```shell
+sudo apt-get update
+sudo apt-get install fio
+```
+
+
 ## Setup
 
 Before running the test it is necessary to define the variables:
