@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 ########################################################################################################
 # CAUTION: This script can cause irreparable damage to the file system if you select DEVs in use. #
 ########################################################################################################
@@ -8,6 +7,7 @@
 #############
 # VARIABLES #
 #############
+
 
 # Defines which devices will be tested 
 # Do not run FIO tests with a write workload (readwrite, randrw, write, trimwrite) directly against a DEV that is in use.
