@@ -9,10 +9,10 @@
 #############
 
 # Define which mount point will be tested
-MNT=( /dev/sdb /dev/sdc /dev/sdd /dev/sde /dev/sdf )
+MNT=( /mnt/test )
 
 # Defines which block sizes will be tested
-BS=( 4k 16k 256k 1m)
+BS=( 4k 16k 64k 256k 1m)
 
 # Defines which file size will be tested
 GB=100GB
