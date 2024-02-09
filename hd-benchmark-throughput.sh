@@ -38,7 +38,7 @@ read -p "Do you want to proceed? (y/n) " yn
 case $yn in 
 	[yY] ) 
 
-		rm -fr /root/out/*
+		rm -fr ./out/*
 		
 		for D in "${MNT[@]}"
 		do
@@ -47,9 +47,9 @@ case $yn in
 				for S in "${BS[@]}"
 				do
 						O=`echo $D | sed 's/\/dev\///g'`
-						OUT="/root/out/$O-$T-$S"
+						OUT="./out/$O-$T-$S"
 						touch $OUT
-      						sudo fio --filename=$D/hd-benchmark-throughput-OP --BS=$GB --direct=1 --rw=$T --bs=$S --ioengine=libaio --iodepth=64 --runtime=$T --numjobs=4 --time_based --group_reporting --name=throughput-OP-job --eta-newline=1 --output=$OUT --output-format=terse --minimal & rm $D/hd-benchmark-throughput-OP
+      						sudo fio --filename=$D/hd-benchmark-throughput-$OP --BS=$GB --direct=1 --rw=$T --bs=$S --ioengine=libaio --iodepth=64 --runtime=$T --numjobs=4 --time_based --group_reporting --name=throughput-OP-job --eta-newline=1 --output=$OUT --output-format=terse --minimal & rm $D/hd-benchmark-throughput-OP
 						echo -e "$HEADER\n$O;$T;$S;$(cat $OUT)" > $OUT
 				done
 			done
