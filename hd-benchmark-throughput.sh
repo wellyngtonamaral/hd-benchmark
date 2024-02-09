@@ -11,7 +11,7 @@ MNT=( /mnt/test )
 BS=( 4k 16k 64k 256k 1m)
 
 # Defines which file size will be tested
-GB=100GB
+GB=25GB
 
 # Defines which operations will be tested
 OP=( randread randwrite randrw read write readwrite )
