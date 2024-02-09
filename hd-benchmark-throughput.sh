@@ -5,7 +5,7 @@
 #############
 
 # Define which mount point will be tested
-MNT=( /mnt/test )
+MNT=( /mnt/test/test-dataset )
 
 # Defines which block sizes will be tested
 BS=( 4k 16k 64k 256k 1m)
