@@ -33,11 +33,11 @@ do
 	do
 		for S in "${BS[@]}"
 		do
-				O=`echo $D | sed 's/\/dev\///g'`
-				OUT="./out/$O-$T-$S"
-				touch $OUT
-				sudo fio --filename=$D/hd-benchmark-throughput-$OP --BS=$GB --direct=1 --rw=$T --bs=$S --ioengine=libaio --iodepth=64 --runtime=$T --numjobs=4 --time_based --group_reporting --name=throughput-OP-job --eta-newline=1 --output=$OUT --output-format=terse --minimal & rm $D/hd-benchmark-throughput-OP
-				echo -e "$HEADER\n$O;$T;$S;$(cat $OUT)" > $OUT
+			O=`echo $D | sed 's/\/mnt\///g'`
+			OUT="./out/$O-$T-$S"
+			touch $OUT
+			sudo fio --filename=$D/hd-benchmark-throughput-$OP --BS=$GB --direct=1 --rw=$T --bs=$S --ioengine=libaio --iodepth=64 --runtime=$T --numjobs=4 --time_based --group_reporting --name=throughput-OP-job --eta-newline=1 --output=$OUT --output-format=terse --minimal && rm $D/hd-benchmark-throughput-OP
+			echo -e "$HEADER\n$O;$T;$S;$(cat $OUT)" > $OUT
 		done
 	done
 done
