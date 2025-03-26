@@ -4,16 +4,16 @@ This repository contains a collection of simple Linux command lines to perform b
 
 The available scripts are:
 
-**hd-benchmark-iops.sh** - it runs performance tests directly on the physical device, abstracting the operating system and file system aspects.
+**hd-benchmark-iops.sh** runs performance tests directly on the physical device, abstracting the operating system and file system aspects.
 
-Using this is possible to find out the speed of the disk and also the performance of the disk interface/disk controller (i.e: PCIe SATA Controller or Port Multiplier).
+Using this, it is possible to find out the disk's speed and the performance of the disk interface/disk controller (e.g., PCIe SATA Controller or Port Multiplier).
 
 In the end, you can summarize all results in a single CSV file and compare multiple disks.
 
 **hd-benchmark-throughput.sh** - it runs tests file system and/or a disk array.
 
 > [!CAUTION]
-> These scripts can cause irreparable damage to the file system if you select devices in use.s
+> These scripts can cause irreparable damage to the file system if you select devices in use.
 
 ## Pre-requisites
 
@@ -27,7 +27,7 @@ To run the test is needed to have the FIO installed.
 
 ## Setup
 
-Before running the test it is necessary to define the variables:
+Before running the test, it is necessary to define the variables:
 
 to **hd-benchmark-iops.sh**:
 
